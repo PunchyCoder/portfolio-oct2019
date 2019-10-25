@@ -3,24 +3,30 @@
 	box-sizing: border-box; }
 
 	body {
-	background-color: #f5f5f5;
+	background-color: #b6b6b6;
 	font-family: "Raleway";
+	}
+
+	@media only screen and (min-width: 1440px) {
+		p {
+			font-size: 1.75rem;
+		}
 	}
 
 	.primary {
 		background-color: #01CBC5;
 		color: #fff; }
 
-	.clr-blu {
-		color: #01CBC5; }
-	.clr-purp {
-		color: #6C15DA; }
+	.clr-purp { color: #7746F8; }
+	.clr-lite { color: #6A5EFF; }
+	.strong { font-weight: 600; }
+	.easy { background-color: rgba(0, 0, 0, .6); }
 
 	.background-img {
 		background-image: url("../keyboard-bw.jpg");
 		height: 600px;
 		background-position: center;
-		background-size: contain;
+		background-size: cover;
 	}
 
 	/* Nav List Items
@@ -90,7 +96,8 @@
 			margin-bottom: 50px;
 		}
 		header p {
-			margin: 0 100px 120px; }
+			margin: 0 100px 120px;
+			background-color: rgba(0, 0, 0, .5); }
 		header li {
 			list-style: none;
 			display: inline-block;
@@ -127,13 +134,14 @@
 			background-color: #fff;
 			text-decoration: none;
 			text-align: center;
-			border: solid 1px #01CBC5;
+			border: solid 1px #6c15da;
 			border-radius: 5px;
 			padding: 15px 5px 0 5px;
-			/*  background-color: #f5f5f5;*/ }
+			background-color: #f5f5f5; }
 		a.card:hover {
-			border-color: #FF7E61;
-			background-color: #e9f0f2; }
+			border-color: #CDCCE8;
+			border-width: 3px;
+			background-color: #fff; }
 		a.card img {
 			display: block;
 		    margin: 0 auto;
@@ -172,9 +180,13 @@
 			background-height: 600px;
 			background-position: center;
 			background-size: cover; }
+
+		#contact a {
+			color: #6A5EFF;
+		}
 		@media only screen and (min-width: 1440px) {
 			#contact .background-img {
-				height: 300px;
+				height: 400px;
 			}
 			#contact .container {
 				margin: 20px 50px;
