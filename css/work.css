@@ -1,0 +1,129 @@
+
+ul.row li:nth-child(2) {
+  text-decoration: line-through;
+  color: grey;
+}
+
+#work {
+  margin: 15px; }
+  #work h1 {
+    opacity: 0.4;
+    color: #00eb62;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center; }
+  #work .project {
+    margin: 0 0 30px 0;
+    border: solid 1px #01CBC5;
+    border-radius: 10px;
+    background-color: #f5f6fc; }
+
+    div.headers {
+      text-align: center;
+    }
+    .headers h4, .headers h5 {
+      margin: 5px auto;
+    }
+
+    #work .project h2 {
+      color: #00eb62;
+      text-align: center;
+      margin-bottom: 3px; }
+
+    #work .project h3 {
+      text-align: center;
+      margin: auto;
+      font-size: 2.5rem; }
+
+    .project p {
+      margin: 5px;
+      padding: 10px; }
+
+    .project a.btn {
+      color: #fff;
+      margin: 3px 40px;
+      padding: 3px; }
+
+    .project a.btn:nth-of-type(1) {
+      background-color: #01CBC5;
+    }
+    .project a.btn:nth-of-type(2) {
+      background-color: #FF7E61;
+    }
+
+      #work .project a.btn a.btn:hover {
+        color: #00eb62; }
+
+.slide-wrapper {
+  position: relative;
+  /*border: solid 1px lightgrey;
+  border-radius: 5px;*/
+  width: 100%;
+  height: 335px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around; }
+
+  .slide-wrapper .btn-previous, .slide-wrapper .btn-next {
+    position: absolute;
+    color: #FF7E61;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+    line-height: 10px;
+    text-align: center;
+    top: 170px;
+    z-index: 10; }
+
+  .slide-wrapper i {
+    border: solid #FF7E61;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px; }
+
+  .slide-wrapper .left-arrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg); }
+
+  .slide-wrapper .right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+
+  .slide-wrapper .btn-previous {
+    left: 5px; }
+
+  .slide-wrapper .btn-next {
+    right: 5px; }
+
+  .slide-wrapper .slide-group {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative; }
+
+  .slide-wrapper .slide {
+    position: absolute;
+    width: 300px;
+    display: inline-block;
+    opacity: 0; }
+
+  .slide-wrapper img {
+    width: 300px;
+    margin: 20px auto;
+    border: solid 1px #FF7E61;
+    border-radius: 5px; }
+
+  .slide-wrapper .hide {
+    display: none;
+    z-index: 1; }
+
+  .slide-wrapper .current {
+    z-index: 5;
+    opacity: 1;
+    margin: auto; }
+
+
+
+
+/*# sourceMappingURL=work.css.map */

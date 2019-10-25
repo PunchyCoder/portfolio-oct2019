@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+
+	<meta charset="utf-8">
+	<title>Kyle's Portfolio</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+
+	<!-- Nav -------------------------------------------->
+	<div class="background-img">
+		<nav>
+			<ul class="">
+				<li class=" "><a class="btn" href="#home">Home</a></li>
+				<li class=" "><a class="btn" href="work.html">Work</a></li>
+				<li class=" "><a class="btn" href="#contact">Contact</a></li>
+				<!-- <li class=" "><button class="button primary">Resume</button></li> -->
+			</ul>
+		</nav>
+
+	
+		<!-- Header -------------------------------------------->
+		<header id="#home">
+			<h1>Kyle Knutson</h1>
+			<h5> { <span class="clr-purp">Software Engineer</span> }</h5>
+			<p> I'm Kyle Knutson, a Web Developer from the Greater Seattle Area. This site is a dedicated portfolio of my most recent works. Please enjoy.</p>
+
+			<ul class="">
+				<li class=""><a href="https://github.com/PunchyCoder">Github</a></li>
+				<li class=""><a href="">Linkedin</a></li>
+				<li class=""><a href="https://www.figma.com/files/recent">Figma</a></li>
+				<li class=""></li>
+			</ul>
+		</header>
+	</div>
+
+	<br>
+
+	<!-- Work -------------------------------------------->
+	<section id="work">
+		<h2>
+			Work 
+		</h2>
+
+		<div class="container">
+
+			<a class="card" href="work.html">
+				<h3 class="clr-blu">FanServer</h3>
+
+				<img src="ss-fanserver-main.jpg" >
+
+				<div class="container">
+					
+					<p>An app that allows users to search for trailers to their favorite anime or animated films.</p>
+				</div>
+			</a>
+
+			<!-- Space between project cards --------------------------------------------><br>
+
+			<a class="card" href="#">
+				<img src="https://images.unsplash.com/photo-1520004434532-668416a08753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" >
+				
+				<h3 class="clr-blu">More Soon</h3>
+				<p>...</p>
+			</a>
+
+		</div>
+	</section>
+
+	<br><br><br><br>
+
+	<!-- Contact Me -------------------------------------------->
+	<section id="contact">
+		<h2>
+			Contact 
+		</h2>
+
+		<div class="background-img">
+			<div class="container">
+				<h4> Here's my <span class="clr-blu">e-mail</span>.</h4>
+				<h5 class="clr-blu">knutson.kyle86@protonmail.com</h5>
+			
+			--
+
+				<footer>
+					<p>Website by Kyle Knutson <br> --  <br>Made with <a href="http://www.getskeleton.com/" target="_blank">Skeleton</a></p>
+				</footer>
+			</div>
+		</div> 
+	</section>
+
+</body>
+
+<script>
+
+// Play a sound effect upon clicking project slide. 
+
+// Create and Load audio element
+var soundFx = document.createElement('audio');
+soundFx.setAttribute('src', 'sound.wav');
+
+soundFx.load();
+
+
+// Function handles attaching event listeners
+var eventHandler = function() {
+
+// Select all slides
+var slides = document.querySelectorAll('.slide'), i;
+
+// Loop through all slides and attach the Event Listener that plays the sound 
+for (i = 0; i < slides.length; i ++) {
+slides[i].addEventListener('click', playSound);
+}
+};
+
+
+// Function handles playing audio/sound
+var playSound = function() {
+
+// Check to see if the audio is ready/loaded or throw error
+if (soundFx.readyState == 4) {
+console.log('Sound was played...')
+soundFx.play();
+} else {
+console.log('sound is not ready: readyState: ' +soundFx.readyState);
+}	
+};
+
+
+// Execute
+eventHandler();
+
+</script>
+
+</html>
