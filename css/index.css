@@ -1,4 +1,4 @@
-@supports (display: grid) {
+@supports (display: grid) { 
 * {
 	box-sizing: border-box; }
 
@@ -24,23 +24,28 @@
 
 	.background-img {
 		background-image: url("../img/keyboard-bw.jpg");
-		height: 600px;
+		height: 500px;
 		background-position: center;
 		background-size: cover;
+	}
+	@media only screen and (min-width: 1400px) {
+		.background-img {
+			height: 500px;
+		}
 	}
 
 	/* Nav List Items
 	--------------------------------------------------*/
 	nav {
 		margin: 0 10px 10px 10px; 
-		text-align: start; }
+		text-align: start;
+		padding-top: 20px; }
 
 		nav ul {
 			text-align: center; }
 		nav li {
 			list-style: none;
-			text-align: center;
-			margin-top: 15px; }
+			text-align: center; }
 		li button.button {
 			display: block;
 			margin: 0 auto; }
@@ -64,6 +69,14 @@
 			cursor: pointer; }
 		.btn:active, .btn:hover, .btn:target {
 			color: #FF7E61; }
+
+		@media (min-width: 750px) {
+			.btn {
+				font-size: 1.25rem;
+				letter-spacing: .2rem;
+				height: 50px;
+			}
+		}
 
 		@media only screen and (min-width: 1400px) {
 			nav {
@@ -96,7 +109,7 @@
 			margin-bottom: 50px;
 		}
 		header p {
-			margin: 0 100px 120px;
+			margin: 0 20px 50px;
 			background-color: rgba(0, 0, 0, .5); }
 		header li {
 			list-style: none;
@@ -155,13 +168,18 @@
 		.card h3 {
 			margin-bottom: 0.5rem; }
 
-		@media only screen and (min-width: 1440px) {
+		@media only screen and (min-width: 800px) {
 			#work .container {
 				display: flex;
 				flex-direction: row;
 				max-width: none;
 				flex-flow: wrap; }
 			#work a.card {
+				width: 300px;
+				margin: 10px; }
+		}
+		@media (min-width: 1000px) {
+				#work a.card {
 				width: 350px;
 				margin: 10px; }
 		}
@@ -173,11 +191,11 @@
 		display: inline-block;
 		padding-left: 50px; }
 
-		#contact .background-img{
+		.contact-bg {
 			color: #fff;
 			padding: 10px;
-			background-image: url(""../img/keyboard-bw.jpg"");
-			background-height: 600px;
+			background-image: url("../img/keyboard-bw.jpg");
+			height: 400px;
 			background-position: center;
 			background-size: cover; }
 
@@ -185,9 +203,9 @@
 			color: #6A5EFF;
 		}
 		@media only screen and (min-width: 1440px) {
-			#contact .background-img {
+			/*#contact .background-img {
 				height: 400px;
-			}
+			}*/
 			#contact .container {
 				margin: 20px 50px;
 			}
