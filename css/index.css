@@ -3,7 +3,8 @@
 	box-sizing: border-box; }
 
 	body {
-	background-color: #b6b6b6;
+	/*background-color: #b6b6b6;*/
+	background-color: #111;
 	font-family: "Raleway";
 	}
 
@@ -139,7 +140,8 @@
 	--------------------------------------------------*/
 	#work h2 {
 		display: inline-block;
-		padding-left: 50px; }
+		padding-left: 50px;
+		color: #fff; }
 
 		a.card {
 			display: block;
@@ -188,8 +190,17 @@
 	/* Contact
 	--------------------------------------------------*/
 	#contact h2 {
+		color: #fff;
 		display: inline-block;
 		padding-left: 50px; }
+
+		footer {
+			color: #fff;
+		}
+
+		body h4 {
+			color: #fff;
+		}
 
 		.contact-bg {
 			color: #fff;

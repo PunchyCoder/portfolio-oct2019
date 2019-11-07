@@ -20,7 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
-<body>
+<body class="container">
 
 	<!-- Nav -------------------------------------------->
 	<div class="background-img">
@@ -104,47 +104,5 @@
 	</section>
 
 </body>
-
-<script>
-
-// Play a sound effect upon clicking project slide. 
-
-// Create and Load audio element
-var soundFx = document.createElement('audio');
-soundFx.setAttribute('src', 'sound.wav');
-
-soundFx.load();
-
-
-// Function handles attaching event listeners
-var eventHandler = function() {
-
-// Select all slides
-var slides = document.querySelectorAll('.slide'), i;
-
-// Loop through all slides and attach the Event Listener that plays the sound 
-for (i = 0; i < slides.length; i ++) {
-slides[i].addEventListener('click', playSound);
-}
-};
-
-
-// Function handles playing audio/sound
-var playSound = function() {
-
-// Check to see if the audio is ready/loaded or throw error
-if (soundFx.readyState == 4) {
-console.log('Sound was played...')
-soundFx.play();
-} else {
-console.log('sound is not ready: readyState: ' +soundFx.readyState);
-}	
-};
-
-
-// Execute
-eventHandler();
-
-</script>
 
 </html>
