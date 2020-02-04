@@ -18,7 +18,7 @@
 		background-color: #01CBC5;
 		color: #fff; }
 
-	.clr-purp { color: #7746F8; }
+	.clr-purp { color: #7746F8; font-weight: 600;}
 	.clr-lite { color: #6A5EFF; }
 	.strong { font-weight: 600; }
 	.easy { background-color: rgba(0, 0, 0, .6); }
@@ -31,13 +31,14 @@
 	}
 	@media only screen and (min-width: 1400px) {
 		.background-img {
-			height: 500px;
+			height: 800px;
 		}
 	}
 
 	/* Nav List Items
 	--------------------------------------------------*/
 	nav {
+		background-color: rgba(0, 0, 0, .5);
 		margin: 0 10px 10px 10px; 
 		text-align: start;
 		padding-top: 20px; }
@@ -81,7 +82,8 @@
 
 		@media only screen and (min-width: 1400px) {
 			nav {
-				height: 50px; }
+				height: 50px;
+				padding: 20px 0; }
 			nav ul {
 				height: 100%;
 				margin: auto;
@@ -106,9 +108,9 @@
 		color: #fff;
 		text-align: center;
 		margin-top: 30px; }
+		header div.focus { margin-bottom: 30px; }
 		header h5 {
-			margin-bottom: 50px;
-		}
+			margin-bottom: 10px; }
 		header p {
 			margin: 0 20px 50px;
 			background-color: rgba(0, 0, 0, .5); }
@@ -126,11 +128,13 @@
 
 		@media only screen and (min-width: 1400px) {
 			header {
-				margin-top: 30px; }
-			header h5 {
-				margin-bottom: 50px; }
+				margin-top: 100px; }
+			/*header h5 {
+				margin-bottom: 50px; }*/
 			header p {
-				margin: 0 100px 120px; }
+				padding: 20px 50px;
+				margin: 50px 500px 150px;
+				border: solid 1px white; }
 		}
 		
 		
@@ -153,10 +157,14 @@
 			border-radius: 5px;
 			padding: 15px 5px 0 5px;
 			background-color: #f5f5f5; }
+
 		a.card:hover {
+			background-color: #b24af7;
+			color: white;
 			border-color: #CDCCE8;
-			border-width: 3px;
-			background-color: #fff; }
+			/*border-width: 3px;*/
+			/*background-color: #fff;*/ }
+		h3 { color: #7746F8; }
 		a.card img {
 			display: block;
 		    margin: 0 auto;
