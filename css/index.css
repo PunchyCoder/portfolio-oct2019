@@ -4,28 +4,39 @@
 
 	body {
 	/*background-color: #b6b6b6;*/
-	background-color: #111;
-	font-family: "Raleway";
+	background: linear-gradient(180deg, #fff 50%, #E5E5E5 50%);
+	font-family: 'Roboto', ;
 	}
 
 	@media only screen and (min-width: 1440px) {
 		p {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
 		}
 	}
 
-	.primary {
-		background-color: #01CBC5;
-		color: #fff; }
 
+	h1 {font-size: 3.5rem;}
+	h2 {font-size: 3rem;}
+	h3 {font-size: 2.5rem;}
+	h4 {font-size: 2rem;}
+	h5 {font-size: 2rem;}
+
+	.email { text-decoration: underline; }
+	.primary {
+		background-color: #01CBC5; color: #fff; }
 	.clr-purp { color: #7746F8; font-weight: 600;}
 	.clr-lite { color: #6A5EFF; }
 	.strong { font-weight: 600; }
 	.easy { background-color: rgba(0, 0, 0, .6); }
 
 	.background-img {
-		background-image: url("../img/keyboard-bw.jpg");
+		background-image: url("../img/Edited-desksplash-neon2.jpg");
 		height: 500px;
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 30px;
+		border-radius: 10px;
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
 		background-position: center;
 		background-size: cover;
 	}
@@ -38,7 +49,7 @@
 	/* Nav List Items
 	--------------------------------------------------*/
 	nav {
-		background-color: rgba(0, 0, 0, .5);
+		background-color: rgba(0, 0, 0, .0);
 		margin: 0 10px 10px 10px; 
 		text-align: start;
 		padding-top: 20px; }
@@ -110,7 +121,12 @@
 		margin-top: 30px; }
 		header div.focus { margin-bottom: 30px; }
 		header h5 {
-			margin-bottom: 10px; }
+			display: inline-block;
+			padding: 20px 50px;
+			margin-bottom: 10px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border: solid 1px white;
+			 }
 		header p {
 			margin: 0 20px 50px;
 			background-color: rgba(0, 0, 0, .5); }
@@ -133,7 +149,7 @@
 				margin-bottom: 50px; }*/
 			header p {
 				padding: 20px 50px;
-				margin: 50px 500px 150px;
+				margin: 50px 20%;
 				border: solid 1px white; }
 		}
 		
@@ -142,10 +158,21 @@
 
 	/* Work Project-Cards
 	--------------------------------------------------*/
+	#work {
+		border: solid 1px #7746F8;
+		background-color: #fff;
+	    border-radius: 10px;
+	    width: 70%;
+	    margin: 0 auto;
+	    margin-top: 50px;
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.45);
+	}
+
 	#work h2 {
 		display: inline-block;
 		padding-left: 50px;
-		color: #fff; }
+		margin: 60px;
+		color: #bdbdbd; }
 
 		a.card {
 			display: block;
@@ -156,34 +183,42 @@
 			border: solid 1px #6c15da;
 			border-radius: 5px;
 			padding: 15px 5px 0 5px;
-			background-color: #f5f5f5; }
+			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+			background-color: #f1f1f1; }
+
+		h3 { font-weight: bold; }
 
 		a.card:hover {
-			background-color: #b24af7;
+			background-color: #6145ff;
 			color: white;
 			border-color: #CDCCE8;
+
 			/*border-width: 3px;*/
 			/*background-color: #fff;*/ }
-		h3 { color: #7746F8; }
+		
 		a.card img {
 			display: block;
-		    margin: 0 auto;
-			margin-bottom: 15px;
+		    margin: 15px auto;
 			width: 250px;
 			border: solid 1px lightgrey;
 			border-bottom: solid 3px lightgrey;
 			border-radius: 10px; }
-		.card .container {
-			padding: 0 30px; }
+		/*.card .container {
+			padding: 0 30px; }*/
 		.card h3 {
 			margin-bottom: 0.5rem; }
 
 		@media only screen and (min-width: 800px) {
 			#work .container {
 				display: flex;
-				flex-direction: row;
-				max-width: none;
-				flex-flow: wrap; }
+			    flex-direction: row;
+			   /* justify-content: center;*/
+			    max-width: none;
+			    flex-flow: wrap;
+			    width: 90%;
+			    margin: 0 auto;
+			    margin-bottom: 60px; }
+
 			#work a.card {
 				width: 300px;
 				margin: 10px; }
@@ -192,23 +227,31 @@
 				#work a.card {
 				width: 350px;
 				margin: 10px; }
+
+				a.card:hover {
+					color: #fff;
+				}
 		}
 		
 
 	/* Contact
 	--------------------------------------------------*/
-	#contact h2 {
+	#contact {
+		background-color: black;
+		border-radius: 10px;
+		margin: 20px auto;
+		width: 70%;
+	}
+
+	#contact h3 {
 		color: #fff;
 		display: inline-block;
-		padding-left: 50px; }
+		padding-left: 20px;
+		margin: 30px; }
 
-		footer {
-			color: #fff;
-		}
+	#contact h4 { color: #fff; }
 
-		body h4 {
-			color: #fff;
-		}
+	#contact p { color: #fff; }
 
 		.contact-bg {
 			color: #fff;
@@ -226,7 +269,11 @@
 				height: 400px;
 			}*/
 			#contact .container {
-				margin: 20px 50px;
+				background-color: black;
+				border-radius: 10px;
+				margin: 20px auto;
+				width: 70%;
+
 			}
 
 		}
